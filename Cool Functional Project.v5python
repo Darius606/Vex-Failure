@@ -9,7 +9,12 @@
 
 # Library imports
 import vex
+
 # Begin project code
-brain = vex.Brain("VEX_V5")
-motor_left = vex.Motor(vex.Ports.PORT2, vex.GearSetting.RATIO18_1, True)
-motor_left.spin(vex.DirectionType.FWD, 100, vex.VelocityUnits.PCT)
+def run():
+    brain = vex.Brain("VEX_V5")
+    motor_left = vex.Motor(vex.Ports.PORT2, vex.GearSetting.RATIO18_1, True)
+    motor_left.spin(vex.DirectionType.FWD, 100, vex.VelocityUnits.PCT)
+
+if __name__ == '__main__':
+    run()
